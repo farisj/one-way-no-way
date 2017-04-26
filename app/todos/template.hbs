@@ -1,0 +1,15 @@
+<div class="todos">
+  <div class="selected-todo">
+    {{#if selectedTodo}}
+      {{todo-display todo=selectedTodo}}
+    {{else}}
+      <div>Please View A Todo.</div>
+    {{/if}}
+  </div>
+  <br>
+  <div>
+    {{#each todos as |todo|}}
+      <button {{action "pageTodo" todo}}> View {{todo.title}} </button>
+    {{/each}}
+  </div>
+</div>

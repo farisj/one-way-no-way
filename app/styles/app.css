@@ -1,0 +1,14 @@
+.todos {
+  margin: 150px;
+  text-align: center;
+}
+
+.selected-todo {
+  border: 1px solid black;
+  padding: 50px;
+  height: 100px;
+}
+
+.todo__content {
+  padding-bottom: 50px;
+}
